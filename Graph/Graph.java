@@ -44,6 +44,7 @@ public class Graph {
 		int vert = Integer.parseInt(data[0]);
 		int edges = Integer.parseInt(data[1]);
 		Graph g = new Graph(vert+1);
+		
 		for(int i=0;i<edges;i++){
 			data = buff.readLine().split(" ");
 			int src = Integer.parseInt(data[0]);
