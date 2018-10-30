@@ -90,7 +90,7 @@ public class Graph {
 			g.addEdge(src, dest);
 		}
 		g.printGraph();
-    g.BFS(1);
+   		g.BFS(1);
 		g.BFSTwo(1);
 	}
 
