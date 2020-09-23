@@ -68,11 +68,11 @@ class Edge {
     public boolean checkIfCycleExists(int vertices, int[][] edgeList) {
       // edge list contains edges with format [[dest, src]] .
         // create a directed graph and check if any cycle is there in the graph.
-        if (numCourses == 0 || prerequisites.length == 0) {
+        if (vertices == 0 || edgeList.length == 0) {
             return true;
         }
-        Graph graph = new Graph(numCourses);
-        for (int[] edges : prerequisites) {
+        Graph graph = new Graph(vertices);
+        for (int[] edges : edgeList) {
             graph.addEdge(edges[1], edges[0], 1);
         }
         return !graph.detectCycle();
