@@ -28,7 +28,7 @@ public class TopologicalSortUsingBFS {
         public List<Integer> topologicalSort() {
             List<Integer> result = new ArrayList<>();
 
-            // STEP 1: Calculate the indegree of the nodes.
+            // STEP 1: Calculate the indegree of the nodes. 
 
             int[] indegree = new int[vertices + 1];
 
